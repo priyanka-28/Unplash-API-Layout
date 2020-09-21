@@ -1,0 +1,121 @@
+/*******************************************************************
+                            GENERAL
+********************************************************************/
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin :0;
+}
+h1,h2,h3,h4,h5,h6,a{
+    color: #fff;
+    /*letter-spacing: 0.5px;*/
+}
+section{
+    background: #FFF;
+    letter-spacing: 0.7px;
+}
+a,a:focus,a:hover{
+    text-decoration: none;
+}
+
+
+/*******************************************************************
+                            HOME
+********************************************************************/
+#home{
+    height: 100vh;
+}
+.home-img{
+    background: url(../background.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+}
+.home-content{
+    background: none;
+    padding-top: 220px;
+}
+.home-content h1{
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+#inner-div{
+    padding: 60px 50px;
+
+}
+#main-content{
+    padding: 80px 200px;
+}
+/*******************HEADINGS************************/
+h1{
+    font-weight: bolder;
+    color:#FFF;
+    font-size: 50px; 
+    margin-bottom: 20px; 
+}
+h4{
+    color: #FFF;
+    font-weight: 300;
+}
+h5{
+    font-weight: 300;
+    margin-top: 10px;
+}
+/*********************HEADER******************************/
+.bg-white{
+    background: #FFF;
+}
+.img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.navbar{
+    /*height: 2rem;*/
+    line-height: 2rem;
+}
+.navbar .btn{
+    margin-top: 5px !important;
+}
+/****************LANDING PAGE**********************/
+#gift{
+    margin-bottom: 20px;
+}
+#landing-page{
+    background: url(../background.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+}
+#main-content .search{
+    display: block !important;
+    width: 720px !important;
+    margin:0 !important;
+}
+/*********************TABS**************************/
+.col-md-10{
+    margin:0 !important;
+    padding: 0 !important;
+}
+#tabs{
+    background: #fff;
+    padding: 30px 15px;
+}
+#tabs a.active{
+    color:#222;
+}
+#tabs a{
+    color:#999;
+}
+.nav{
+    margin-bottom: 20px;
+}
+.nav .nav-link:hover{
+    cursor: pointer
+}
+.search{
+    margin: 20px 0;
+}

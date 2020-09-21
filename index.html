@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Unsplash API</title>
+    
+    <!-- Basic SEO -->
+    <meta name="description" content="Implementing Unsplash API using Javascript; has tab-based navigation with infinite scrolling of pictures">
+    <meta name="keywords" content="UI, UX, Mobile App, Web Design, Web Development, Responsive website, Creative website, Video, Creative Content">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+    <body data-spy="scroll" onload="Trending()">
+        
+        <!--HOME-->
+        <section id="home">
+            <div class="home-img" >
+                
+                <div id="inner-div">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <div class="col-md-7">
+                                <a class="navbar-brand" href="#"><i class="fa fa-camera"></i></a>
+                            </div>
+                            <div class="col-md-5">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Collections</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Explore</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">...</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Submit a photo</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-bell-o"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">                
+                                            <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+        
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- LANDING PAGE -->
+                    <div id="landing-page">
+                        <div id="main-content">
+                            <h1>Unsplash</h1>
+                            <h4>Beautiful, free photos.</h4>
+                            <h4 id="gift">Gifted by the world's most genious community of photographers.</h4>
+                                  <!-- <input type="text" placeholder="Search "> -->
+                            <form class="form-inline">
+                                <div class="col-md-10">
+                                    <input class="form-control search" type="search" placeholder="Search free high-resolution photos" aria-label="Search">
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn bg-white my-2 my-sm-2" type="submit">Search</button>
+                                </div>
+                            </form>
+
+                            <h5>Trending searches: business, computer, nature, love, house</h5>
+                        </div>
+                    </div>
+                     <!-- TAB-BASED NAVIGATION -->
+                    <div id="tabs">
+                        <nav class="nav">
+                            <a id="trending" class="nav-link active"  onclick="Trending()">Trending</a>
+                            <a id="new" class="nav-link"  onclick="New()">New</a>
+                            <a class="nav-link" href="#">Following</a>
+                        </nav>
+                        <div id="result">
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <!--/HOME
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
